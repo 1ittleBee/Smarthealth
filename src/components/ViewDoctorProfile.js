@@ -41,35 +41,46 @@ const ViewDoctorProfile = () => {
   }
 
   return (
-    <div className="bg-gradient-to-b from-black to-gray-800 p-4 sm:p-10 font-mono text-white h-screen flex flex-col justify-center items-center">
-      <h2 className="text-3xl sm:text-4xl font-bold mb-6">Doctor Profile</h2>
+    <div className="bg-gradient-to-b from-purple-500 to-purple-800 p-4 sm:p-10 font-mono text-white h-screen flex flex-col justify-center items-center">
+      <h2 className="text-3xl sm:text-4xl font-bold text-yellow-300 mb-6">
+        Doctor Profile
+      </h2>
       <div className="bg-gray-900 p-6 rounded-lg shadow-lg w-full max-w-2xl">
         <p className="text-lg mb-4">
-          <strong>Name:</strong> {doctorProfile.doctorName}
+          <strong className="text-yellow-300">Name:</strong>{" "}
+          {doctorProfile.doctorName}
         </p>
         <p className="text-lg mb-4">
-          <strong>Hospital:</strong> {doctorProfile.hospitalName}
+          <strong className="text-yellow-300">Hospital:</strong>{" "}
+          {doctorProfile.hospitalName}
         </p>
         <p className="text-lg mb-4">
-          <strong>Date of Birth:</strong> {doctorProfile.dateOfBirth}
+          <strong className="text-yellow-300">Date of Birth:</strong>{" "}
+          {doctorProfile.dateOfBirth}
         </p>
         <p className="text-lg mb-4">
-          <strong>Gender:</strong> {doctorProfile.gender}
+          <strong className="text-yellow-300">Gender:</strong>{" "}
+          {doctorProfile.gender}
         </p>
         <p className="text-lg mb-4">
-          <strong>Phone Number:</strong> {doctorProfile.phoneNumber}
+          <strong className="text-yellow-300">Phone Number:</strong>{" "}
+          {doctorProfile.phoneNumber}
         </p>
         <p className="text-lg mb-4">
-          <strong>Specialization:</strong> {doctorProfile.specialization}
+          <strong className="text-yellow-300">Specialization:</strong>{" "}
+          {doctorProfile.specialization}
         </p>
         <p className="text-lg mb-4">
-          <strong>Department:</strong> {doctorProfile.department}
+          <strong className="text-yellow-300">Department:</strong>{" "}
+          {doctorProfile.department}
         </p>
         <p className="text-lg mb-4">
-          <strong>Designation:</strong> {doctorProfile.designation}
+          <strong className="text-yellow-300">Designation:</strong>{" "}
+          {doctorProfile.designation}
         </p>
         <p className="text-lg">
-          <strong>BMDC Number:</strong> {doctorProfile.bmdcNumber}
+          <strong className="text-yellow-300">BMDC Number:</strong>{" "}
+          {doctorProfile.bmdcNumber}
         </p>
       </div>
     </div>

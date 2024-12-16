@@ -64,13 +64,15 @@ function DoctorPermission() {
 
   console.log(doctorAddress);
   return (
-    <div className="backgroundImage bg-gradient-to-b from-black to-gray-800 min-h-screen flex flex-col justify-center items-center p-4 font-mono text-white">
+    <div className="backgroundImage bg-gradient-to-b from-purple-500 to-purple-800 min-h-screen flex flex-col justify-center items-center p-4 font-mono text-yellow-300">
       <div className="w-full max-w-4xl bg-gray-900 p-20 rounded-lg shadow-lg">
         <h2 className="text-3xl sm:text-4xl font-bold mb-6">
           Doctor Permission
         </h2>
         <div className="flex flex-col w-full mb-4">
-          <label className="mb-2 font-bold">Patient Address:</label>
+          <label className="mb-2 font-bold text-yellow-300">
+            Patient Address:
+          </label>
           <input
             type="text"
             value={patientAddress}
@@ -80,7 +82,9 @@ function DoctorPermission() {
           />
         </div>
         <div className="flex flex-col w-full mb-4">
-          <label className="mb-2 font-bold">Doctor Address:</label>
+          <label className="mb-2 font-bold text-yellow-300">
+            Doctor Address:
+          </label>
           <input
             type="text"
             value={address}

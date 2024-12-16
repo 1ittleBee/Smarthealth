@@ -131,14 +131,17 @@ const DoctorRegistrationForm = () => {
   };
 
   return (
-    <div className="createehr min-h-screen flex items-center justify-center p-4 bg-gradient-to-b from-black to-gray-800 font-mono">
+    <div className="createehr min-h-screen flex items-center justify-center p-4 bg-gradient-to-b from-indigo-500 to-indigo-900 font-mono">
       <div className="w-full max-w-2xl">
         <h2 className="text-3xl text-white mb-6 font-bold text-center">
           Doctor Registration
         </h2>
         <form className="bg-gray-900 p-6 rounded-lg shadow-lg grid grid-cols-1 sm:grid-cols-2 gap-4">
           <div className="mb-4">
-            <label className="block font-bold text-white" htmlFor="doctorAddress">
+            <label
+              className="block font-bold text-yellow-300"
+              htmlFor="doctorAddress"
+            >
               Doctor Address:
             </label>
             <input
@@ -150,7 +153,10 @@ const DoctorRegistrationForm = () => {
             />
           </div>
           <div className="mb-4">
-            <label className="block font-bold text-white" htmlFor="doctorName">
+            <label
+              className="block font-bold text-yellow-300"
+              htmlFor="doctorName"
+            >
               Doctor Name:
             </label>
             <input
@@ -162,7 +168,10 @@ const DoctorRegistrationForm = () => {
             />
           </div>
           <div className="mb-4">
-            <label className="block font-bold text-white" htmlFor="hospitalName">
+            <label
+              className="block font-bold text-yellow-300"
+              htmlFor="hospitalName"
+            >
               Hospital Name:
             </label>
             <select
@@ -180,7 +189,10 @@ const DoctorRegistrationForm = () => {
             </select>
           </div>
           <div className="mb-4">
-            <label className="block font-bold text-white" htmlFor="dateOfBirth">
+            <label
+              className="block font-bold text-yellow-300"
+              htmlFor="dateOfBirth"
+            >
               Date of Birth (dd/mm/yyyy):
             </label>
             <input
@@ -192,7 +204,7 @@ const DoctorRegistrationForm = () => {
             />
           </div>
           <div className="mb-4">
-            <label className="block font-bold text-white" htmlFor="gender">
+            <label className="block font-bold text-yellow-300" htmlFor="gender">
               Gender:
             </label>
             <input
@@ -204,7 +216,10 @@ const DoctorRegistrationForm = () => {
             />
           </div>
           <div className="mb-4">
-            <label className="block font-bold text-white" htmlFor="phoneNumber">
+            <label
+              className="block font-bold text-yellow-300"
+              htmlFor="phoneNumber"
+            >
               Phone Number:
             </label>
             <input
@@ -217,7 +232,7 @@ const DoctorRegistrationForm = () => {
           </div>
           <div className="mb-4">
             <label
-              className="block font-bold text-white"
+              className="block font-bold text-yellow-300"
               htmlFor="specialization"
             >
               Specialization:
@@ -237,7 +252,10 @@ const DoctorRegistrationForm = () => {
             </select>
           </div>
           <div className="mb-4">
-            <label className="block font-bold text-white" htmlFor="department">
+            <label
+              className="block font-bold text-yellow-300"
+              htmlFor="department"
+            >
               Department:
             </label>
             <select
@@ -255,7 +273,10 @@ const DoctorRegistrationForm = () => {
             </select>
           </div>
           <div className="mb-4">
-            <label className="block font-bold text-white" htmlFor="designation">
+            <label
+              className="block font-bold text-yellow-300"
+              htmlFor="designation"
+            >
               Designation:
             </label>
             <select
@@ -273,7 +294,10 @@ const DoctorRegistrationForm = () => {
             </select>
           </div>
           <div className="mb-4">
-            <label className="block font-bold text-white" htmlFor="bmdcNumber">
+            <label
+              className="block font-bold text-yellow-300"
+              htmlFor="bmdcNumber"
+            >
               BMDC Number:
             </label>
             <input

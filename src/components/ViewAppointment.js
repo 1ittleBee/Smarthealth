@@ -73,12 +73,12 @@ function ViewAppointments() {
   };
 
   return (
-    <div className="bg-gradient-to-b from-black to-gray-800 text-white p-10 font-mono">
-      <h1 className="text-4xl font-bold text-center mb-10">
+    <div className="bg-gradient-to-b from-purple-500 to-purple-800 text-white p-10 font-mono">
+      <h1 className="text-4xl font-bold text-center text-yellow-300 mb-10">
         View Appointments
       </h1>
 
-      <h2 className="text-2xl">Appointments List:</h2>
+      <h2 className="text-2xl text-yellow-300">Appointments List:</h2>
       <ul className="list-disc ml-5">
         {appointments.map((appointment, index) => (
           <li

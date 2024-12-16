@@ -158,7 +158,7 @@ const CreateEhr = () => {
   };
 
   return (
-    <div className="createehr min-h-screen flex items-center justify-center p-4 bg-gradient-to-b from-black to-gray-800 font-mono">
+    <div className="createehr min-h-screen flex items-center justify-center p-4 bg-gradient-to-b from-purple-500 to-purple-800 font-mono">
       <div className="w-full max-w-2xl">
         <h2 className="text-3xl text-white mb-6 font-bold text-center">
           Create Electronic Health Record
@@ -168,14 +168,17 @@ const CreateEhr = () => {
           onSubmit={handleSubmit}
         >
           <div>
-            <label className="block text-white" htmlFor="recordId">
+            <label className="block text-yellow-300" htmlFor="recordId">
               Record Id :
             </label>
             <span className="mt-2 p-2 text-white font-bold">{recId}</span>
           </div>
 
           <div className="mb-4">
-            <label className="block font-bold text-white" htmlFor="patientName">
+            <label
+              className="block font-bold text-yellow-300"
+              htmlFor="patientName"
+            >
               Patient Name:
             </label>
             <input
@@ -189,7 +192,10 @@ const CreateEhr = () => {
           </div>
 
           <div className="mb-4">
-            <label className="block font-bold text-white" htmlFor="doctorName">
+            <label
+              className="block font-bold text-yellow-300"
+              htmlFor="doctorName"
+            >
               Doctor Name:
             </label>
             <input
@@ -204,7 +210,7 @@ const CreateEhr = () => {
 
           <div className="mb-4">
             <label
-              className="block font-bold text-white"
+              className="block font-bold text-yellow-300"
               htmlFor="patientAddress"
             >
               Patient Address:
@@ -220,7 +226,7 @@ const CreateEhr = () => {
           </div>
 
           <div className="mb-4">
-            <label className="block font-bold text-white" htmlFor="age">
+            <label className="block font-bold text-yellow-300" htmlFor="age">
               Age:
             </label>
             <input
@@ -234,7 +240,7 @@ const CreateEhr = () => {
           </div>
 
           <div className="mb-4">
-            <label className="block font-bold text-white" htmlFor="gender">
+            <label className="block font-bold text-yellow-300" htmlFor="gender">
               Gender:
             </label>
             <input
@@ -248,7 +254,10 @@ const CreateEhr = () => {
           </div>
 
           <div className="mb-4">
-            <label className="block font-bold text-white" htmlFor="diagnosis">
+            <label
+              className="block font-bold text-yellow-300"
+              htmlFor="diagnosis"
+            >
               Diagnosis:
             </label>
             <textarea
@@ -263,7 +272,7 @@ const CreateEhr = () => {
 
           <div className="mb-4">
             <label
-              className="block font-bold text-white"
+              className="block font-bold text-yellow-300"
               htmlFor="prescription"
             >
               Prescription:
@@ -279,7 +288,7 @@ const CreateEhr = () => {
           </div>
 
           <div className="mb-4 col-span-full">
-            <h2 className="text-white">Upload Final Report</h2>
+            <h2 className="text-yellow-300">Upload Final Report</h2>
             <input
               type="file"
               onChange={onFileChange}
@@ -290,7 +299,7 @@ const CreateEhr = () => {
 
           <div className="mb-4 col-span-full">
             <label
-              className="block font-bold text-white"
+              className="block font-bold text-yellow-300"
               htmlFor="doctorPrivateKey"
             >
               Doctor Private Key:

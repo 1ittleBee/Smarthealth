@@ -23,42 +23,43 @@ const DoctorDashBoardPage = () => {
   };
 
   return (
-
     <div>
       <NavBar_Logout></NavBar_Logout>
-    <div className="bg-gradient-to-b from-black to-gray-800 p-4 sm:p-10 font-mono text-white h-screen flex flex-col justify-center items-center">
-      <h2 className="text-3xl sm:text-4xl font-bold mb-6">Doctor Dashboard</h2>
-      <p className="text-xl sm:text-2xl mb-4">
-        Hello, doctor at address:{" "}
-        <span className="font-bold text-yellow-500">{address}</span>
-      </p>
-      <div className="space-y-4 space-x-4">
-      <button
-    onClick={viewDoctorProfile}
-    className="px-6 py-3 bg-teal-500 hover:bg-gray-600 text-white rounded-lg focus:outline-none focus:ring focus:ring-teal-400 transition duration-300"
-  >
-    View Profile
-  </button>
-        <button
-          onClick={handleClick}
-          className="px-6 py-3 bg-teal-500 hover:bg-gray-600 text-white rounded-lg focus:outline-none focus:ring focus:ring-teal-400 transition duration-300"
-        >
-          Create EHR
-        </button>
-        <button
-          onClick={viewPatientRecords}
-          className="px-6 py-3 bg-teal-500 hover-bg-gray-600 text-white rounded-lg focus:outline-none focus:ring focus:ring-teal-400 transition duration-300"
-        >
-          View Patient Records
-        </button>
-        <button
-          onClick={viewAppointment}
-          className="px-6 py-3 bg-teal-500 hover:bg-gray-600 text-white rounded-lg focus:outline-none focus:ring focus:ring-teal-400 transition duration-300"
-        >
-          View Appointments
-        </button>
+      <div className="bg-gradient-to-b from-purple-500 to-purple-800 p-4 sm:p-10 font-mono text-white h-screen flex flex-col justify-center items-center">
+        <h2 className="text-3xl sm:text-4xl font-bold text-yellow-300 mb-6">
+          Doctor Dashboard
+        </h2>
+        <p className="text-xl sm:text-2xl text-yellow-300 mb-4">
+          Hello, doctor at address:{" "}
+          <span className="font-bold text-yellow-500">{address}</span>
+        </p>
+        <div className="space-y-4 space-x-4">
+          <button
+            onClick={viewDoctorProfile}
+            className="px-6 py-3 bg-teal-500 hover:bg-gray-600 text-white rounded-lg focus:outline-none focus:ring focus:ring-teal-400 transition duration-300"
+          >
+            View Profile
+          </button>
+          <button
+            onClick={handleClick}
+            className="px-6 py-3 bg-teal-500 hover:bg-gray-600 text-white rounded-lg focus:outline-none focus:ring focus:ring-teal-400 transition duration-300"
+          >
+            Create EHR
+          </button>
+          <button
+            onClick={viewPatientRecords}
+            className="px-6 py-3 bg-teal-500 hover-bg-gray-600 text-white rounded-lg focus:outline-none focus:ring focus:ring-teal-400 transition duration-300"
+          >
+            View Patient Records
+          </button>
+          <button
+            onClick={viewAppointment}
+            className="px-6 py-3 bg-teal-500 hover:bg-gray-600 text-white rounded-lg focus:outline-none focus:ring focus:ring-teal-400 transition duration-300"
+          >
+            View Appointments
+          </button>
+        </div>
       </div>
-    </div>
     </div>
   );
 };

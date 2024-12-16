@@ -78,13 +78,15 @@ function RecordPermission() {
   };
 
   return (
-    <div className="bg-gradient-to-b from-black to-gray-800 min-h-screen flex items-center justify-center p-4 font-mono text-white">
+    <div className="bg-gradient-to-b from-purple-500 to-purple-800 min-h-screen flex items-center justify-center p-4 font-mono text-yellow-300">
       <div className="w-full max-w-6xl bg-gray-900 p-20 rounded-lg shadow-lg">
         <h1 className="text-3xl mb-6 font-bold text-center">
           Record Permission
         </h1>
         <div className="flex flex-col w-full mb-4">
-          <label className="mb-2 font-bold">Patient Address:</label>
+          <label className="mb-2 font-bold text-yellow-300">
+            Patient Address:
+          </label>
           <input
             type="text"
             value={patientAddress}
@@ -93,7 +95,9 @@ function RecordPermission() {
           />
         </div>
         <div className="flex flex-col w-full mb-4">
-          <label className="mb-2 font-bold">Doctor Address:</label>
+          <label className="mb-2 font-bold text-yellow-300">
+            Doctor Address:
+          </label>
           <input
             type="text"
             value={doctorAddress}
@@ -105,13 +109,13 @@ function RecordPermission() {
           <button
             onClick={grantPermission}
             disabled={!contract || isLoading}
-            className="px-5 py-2.5 bg-green-500 text-white font-bold text-lg rounded-lg cursor-pointer transition-transform transition-colors duration-300 ease-in hover:bg-teal-600 active:bg-teal-700"
+            className="px-5 py-2.5 bg-green-500 text-white font-bold text-lg rounded-lg cursor-pointer transition-transform transition-colors duration-300 ease-in hover:bg-green-600 active:bg-green-700"
           >
             Grant Permission
           </button>
           <button
             onClick={revokePermission}
-            className="px-5 py-2.5 bg-red-500 text-white font-bold text-lg rounded-lg cursor-pointer transition-transform transition-colors duration-300 ease-in hover:bg-teal-600 active:bg-teal-700"
+            className="px-5 py-2.5 bg-red-500 text-white font-bold text-lg rounded-lg cursor-pointer transition-transform transition-colors duration-300 ease-in hover:bg-red-600 active:bg-red-700"
           >
             Revoke Permission
           </button>

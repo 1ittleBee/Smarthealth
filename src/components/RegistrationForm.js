@@ -22,10 +22,10 @@ const RegistrationForm = ({ contract, accounts }) => {
   };
 
   return (
-    <div className="register">
-      <h2 className="h2-reg">Registration</h2>
+    <div className="register bg-gradient-to-r from-purple-500 to-purple-800 p-4">
+      <h2 className="h2-reg text-white">Registration</h2>
       <div className="regchild">
-        <label className="label-reg">Select Account: </label>
+        <label className="label-reg text-yellow-300">Select Account: </label>
         <select
           className="select-reg"
           onChange={(e) => setSelectedAccount(e.target.value)}

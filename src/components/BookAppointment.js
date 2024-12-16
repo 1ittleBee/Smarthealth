@@ -101,12 +101,12 @@ function BookAppointment() {
   };
 
   return (
-    <div className="bg-gradient-to-b from-black to-gray-800 p-4 sm:p-10 font-mono text-white flex flex-col justify-center items-center">
+    <div className="bg-gradient-to-b from-purple-500 to-purple-800 p-4 sm:p-10 font-mono text-yellow-300 flex flex-col justify-center items-center">
       <div className="w-full max-w-6xl bg-gray-900 p-24 rounded-lg shadow-lg flex flex-col justify-center items-center">
-        <h1 className="text-4xl font-bold mb-8 ">Book Appointment</h1>
+        <h1 className="text-4xl font-bold mb-8">Book Appointment</h1>
 
         <div className="w-full sm:w-1/2 flex flex-col space-y-4">
-          <label className=" text-lg">
+          <label className="text-lg text-yellow-300">
             Patient Name:
             <input
               type="text"
@@ -115,7 +115,7 @@ function BookAppointment() {
             />
           </label>
 
-          <label className=" text-lg">
+          <label className="text-lg text-yellow-300">
             Doctor Address:
             <input
               type="text"
@@ -125,7 +125,7 @@ function BookAppointment() {
             />
           </label>
 
-          <label className=" text-lg">
+          <label className="text-lg text-yellow-300">
             Patient Address:
             <input
               type="text"
@@ -135,7 +135,7 @@ function BookAppointment() {
             />
           </label>
 
-          <label className=" text-lg mb-2">Date and Time:</label>
+          <label className="text-lg text-yellow-300 mb-2">Date and Time:</label>
           <DatePicker
             selected={selectedDate}
             onChange={(date) => setSelectedDate(date)}
@@ -158,7 +158,7 @@ function BookAppointment() {
 
           <button
             onClick={handleBooking}
-            className="mt-6 px-10 py-2 rounded-lg bg-teal-500 hover:bg-teal-600 transition-colors duration-300 focus:outline-none focus:ring-2 focus:ring-teal-500"
+            className="mt-6 px-10 py-2 rounded-lg bg-teal-500 text-white hover:bg-teal-600 transition-colors duration-300 focus:outline-none focus:ring-2 focus:ring-teal-500"
           >
             Book Appointment
           </button>

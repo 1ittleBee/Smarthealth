@@ -135,14 +135,14 @@ const PatientRegistration = () => {
   };
 
   return (
-    <div className="min-h-screen flex items-center justify-center p-4 bg-gradient-to-b from-black to-gray-800 font-mono">
+    <div className="min-h-screen flex items-center justify-center p-4 bg-gradient-to-b from-blue-500 to-blue-900 font-mono">
       <div className="w-full max-w-4xl">
-        <h2 className="text-3xl text-white mb-6 font-bold text-center">
+        <h2 className="text-3xl text-white mb-6 font-bold text-center text-yellow-400">
           Register Patient
         </h2>
         <form className="bg-gray-900 p-6 rounded-lg shadow-lg grid grid-cols-1 md:grid-cols-2 gap-4">
           <div className="mb-4">
-            <label className="block font-bold text-white" htmlFor="name">
+            <label className="block font-bold text-yellow-400" htmlFor="name">
               Name:
             </label>
             <input
@@ -156,7 +156,10 @@ const PatientRegistration = () => {
           </div>
 
           <div className="mb-4">
-            <label className="block font-bold text-white" htmlFor="dateOfBirth">
+            <label
+              className="block font-bold text-yellow-400"
+              htmlFor="dateOfBirth"
+            >
               Date of Birth:
             </label>
             <input
@@ -170,7 +173,10 @@ const PatientRegistration = () => {
           </div>
 
           <div className="mb-4">
-            <label className="block font-bold text-white" htmlFor="homeAddress">
+            <label
+              className="block font-bold text-yellow-400"
+              htmlFor="homeAddress"
+            >
               Home Address:
             </label>
             <input
@@ -184,7 +190,10 @@ const PatientRegistration = () => {
           </div>
 
           <div className="mb-4">
-            <label className="block font-bold text-white" htmlFor="phoneNumber">
+            <label
+              className="block font-bold text-yellow-400"
+              htmlFor="phoneNumber"
+            >
               Phone Number:
             </label>
             <input
@@ -199,7 +208,7 @@ const PatientRegistration = () => {
 
           <div className="mb-4">
             <label
-              className="block font-bold text-white"
+              className="block font-bold text-yellow-400"
               htmlFor="walletAddress"
             >
               Wallet Address:
@@ -215,7 +224,7 @@ const PatientRegistration = () => {
           </div>
 
           <div className="mb-4">
-            <label className="block font-bold text-white" htmlFor="gender">
+            <label className="block font-bold text-yellow-400" htmlFor="gender">
               Gender:
             </label>
             <input

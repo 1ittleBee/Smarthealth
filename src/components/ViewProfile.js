@@ -55,7 +55,7 @@ const ViewProfile = () => {
   }, [contract, address]);
 
   return (
-    <div className="bg-gradient-to-b from-black to-gray-800 p-4 sm:p-10 font-mono text-white h-screen flex flex-col items-center">
+    <div className="bg-gradient-to-b from-purple-500 to-purple-800 p-4 sm:p-10 font-mono text-yellow-300 h-screen flex flex-col items-center">
       <h2 className="text-3xl sm:text-4xl font-bold mb-6">Patient Profile</h2>
       {isLoading ? (
         <p>Loading...</p>

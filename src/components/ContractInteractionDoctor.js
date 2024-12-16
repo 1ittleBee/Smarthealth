@@ -61,8 +61,10 @@ function ContractInteractionDoctor() {
   };
 
   return (
-    <div className="bg-gradient-to-b from-black to-gray-800 text-white p-10 font-mono">
-      <h1 className="text-4xl font-bold text-center mb-10">Record Viewer</h1>
+    <div className="bg-gradient-to-b from-purple-500 to-purple-800 text-white p-10 font-mono">
+      <h1 className="text-4xl font-bold text-center text-yellow-300 mb-10">
+        Record Viewer
+      </h1>
       <ul>
         {records.map((record, index) => (
           <li
@@ -70,36 +72,36 @@ function ContractInteractionDoctor() {
             className="flex justify-between items-start border-white border p-5 mb-5 flex-wrap"
           >
             <div className="flex-none w-1/2 pr-5">
-              <strong className="text-xl text-yellow-500">Record Id:</strong>{" "}
+              <strong className="text-xl text-yellow-300">Record Id:</strong>{" "}
               {record.recordId}
               <br />
-              <strong className="text-yellow-500">Patient Name:</strong>{" "}
+              <strong className="text-yellow-300">Patient Name:</strong>{" "}
               {record.patientName}
               <br />
-              <strong className="text-yellow-500">Doctor Name:</strong>{" "}
+              <strong className="text-yellow-300">Doctor Name:</strong>{" "}
               {record.doctorName}
               <br />
-              <strong className="text-yellow-500">Doctor Address:</strong>{" "}
+              <strong className="text-yellow-300">Doctor Address:</strong>{" "}
               {record.doctorAddress}
               <br />
-              <strong className="text-yellow-500">Patient Address:</strong>{" "}
+              <strong className="text-yellow-300">Patient Address:</strong>{" "}
               {record.patientAddress}
               <br />
-              <strong className="text-yellow-500">Age:</strong> {record.age}
+              <strong className="text-yellow-300">Age:</strong> {record.age}
               <br />
-              <strong className="text-yellow-500">Gender:</strong>{" "}
+              <strong className="text-yellow-300">Gender:</strong>{" "}
               {record.gender}
               <br />
-              <strong className="text-yellow-500">Diagnosis:</strong>{" "}
+              <strong className="text-yellow-300">Diagnosis:</strong>{" "}
               {record.diagnosis}
               <br />
-              <strong className="text-yellow-500">Prescription:</strong>{" "}
+              <strong className="text-yellow-300">Prescription:</strong>{" "}
               {record.prescription}
               <br />
             </div>
 
             <div className="flex-none w-1/2">
-              <h2 className="text-2xl mb-3">Retrieve & View</h2>
+              <h2 className="text-2xl mb-3 text-yellow-300">Retrieve & View</h2>
               <button
                 onClick={() => retrieveFromWeb3(record.cid)}
                 className="px-8 py-3 rounded-lg bg-teal-500 hover:bg-gray-600 transition-colors duration-300 transform hover:scale-105"

@@ -62,8 +62,10 @@ function ContractInteraction() {
   };
 
   return (
-    <div className="bg-gradient-to-b from-black to-gray-800 text-white p-10 font-mono">
-      <h1 className="text-4xl font-bold text-center mb-10">Record Viewer</h1>
+    <div className="bg-gradient-to-b from-purple-500 to-purple-800 text-white p-10 font-mono">
+      <h1 className="text-4xl font-bold text-center mb-10 text-yellow-500">
+        Record Viewer
+      </h1>
       <ul>
         {records.map((record, index) => (
           <li
@@ -102,7 +104,7 @@ function ContractInteraction() {
 
             {/* PDF Viewer */}
             <div className="flex-none w-1/2">
-              <h2 className="text-2xl mb-3">Retrieve & View</h2>
+              <h2 className="text-2xl mb-3 text-yellow-500">Retrieve & View</h2>
               <button
                 onClick={() => retrieveFromWeb3(record.cid)}
                 className="px-8 py-3 rounded-lg bg-teal-500 hover:bg-gray-600 transition-colors duration-300 transform hover:scale-105"

@@ -100,14 +100,14 @@ const PatientWritePermission = () => {
   };
 
   return (
-    <div className="bg-gradient-to-b from-black to-gray-800 p-4 sm:p-10 font-mono text-white h-screen flex flex-col justify-center items-center">
+    <div className="bg-gradient-to-b from-purple-500 to-purple-800 p-4 sm:p-10 font-mono text-yellow-300 h-screen flex flex-col justify-center items-center">
       <div className="w-full max-w-6xl bg-gray-900 p-24 rounded-lg shadow-lg flex flex-col justify-center items-center">
         <h1 className="text-3xl sm:text-4xl font-bold mb-6">
           Write Permission Management
         </h1>
 
         <div className="flex flex-col w-full sm:w-1/2 mb-4">
-          <label className="mb-2 font-bold">
+          <label className="mb-2 font-bold text-yellow-300">
             Doctors Wallet Address:
             <input
               type="text"
@@ -121,19 +121,19 @@ const PatientWritePermission = () => {
         <div className="flex gap-4 mb-6">
           <button
             onClick={givePermission}
-            className="px-8 py-4 rounded-lg bg-green-500 hover:bg-gray-600 transition-colors duration-300"
+            className="px-8 py-4 rounded-lg bg-green-500 text-white hover:bg-green-600 active:bg-green-700 transition-colors duration-300"
           >
             Give Permission
           </button>
           <button
             onClick={revokePermission}
-            className="px-8 py-4 rounded-lg bg-red-500 hover:bg-gray-600 transition-colors duration-300"
+            className="px-8 py-4 rounded-lg bg-red-500 text-white hover:bg-red-600 active:bg-red-700 transition-colors duration-300"
           >
             Revoke Permission
           </button>
           <button
             onClick={checkPermission}
-            className="px-8 py-4 rounded-lg bg-blue-500 hover:bg-gray-600 transition-colors duration-300"
+            className="px-8 py-4 rounded-lg bg-blue-500 text-white hover:bg-blue-600 active:bg-blue-700 transition-colors duration-300"
           >
             Check Permission
           </button>
